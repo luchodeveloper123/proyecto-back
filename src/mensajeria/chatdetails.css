@@ -1,0 +1,111 @@
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    width: 60%;
+    max-width: 600px;
+    margin: auto; 
+    background-color: #121b22; 
+    color: #e9edef; 
+    border-radius: 8px; 
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); 
+}
+
+.chat-header {
+    background-color: #202c33;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #e9edef;
+    text-align: center;
+    border-bottom: 1px solid #313d45;
+    border-radius: 8px 8px 0 0;
+}
+
+.chat-messages-container {
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto;
+    background: url('../img/whatsapp-bg.png') center center no-repeat;
+    background-size: cover;
+}
+
+.chat-message-item {
+    margin: 10px 0;
+    padding: 10px;
+    max-width: 60%;
+    border-radius: 8px;
+    word-wrap: break-word;
+}
+
+.chat-message-item strong {
+    display: block;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.chat-message-item:nth-child(odd) {
+    align-self: flex-start;
+    background-color: #202c33; 
+    color: #e9edef;
+}
+
+.chat-message-item:nth-child(even) {
+    align-self: flex-end;
+    background-color: #005c4b; 
+    color: white;
+}
+
+.chat-form {
+    display: flex;
+    align-items: center;
+    background-color: #202c33;
+    padding: 10px;
+    border-top: 1px solid #313d45;
+    border-radius: 0 0 8px 8px; 
+}
+
+.chat-input {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 20px;
+    margin-right: 10px;
+    background-color: #2a3942;
+    color: white;
+}
+
+.chat-input::placeholder {
+    color: #8596a0;
+}
+
+.chat-send-button {
+    background-color: #005c4b;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.chat-send-button:hover {
+    background-color: #008069;
+}
+
+.chat-loading {
+    font-size: 16px;
+    color: #8596a0;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+
+

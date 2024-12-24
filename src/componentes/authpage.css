@@ -1,0 +1,133 @@
+.auth-page-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+    background-color: #1e3a8a; 
+    padding: 200px;
+    width: 100%; 
+    box-sizing: border-box 
+}
+
+.auth-page-form {
+    background-color: rgb(255, 255, 255); 
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.auth-page-input-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.auth-page-input-group label {
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #254291;
+}
+
+.auth-page-input {
+    padding: 12px 16px;
+    font-size: 16px;
+    border: 2px solid #060707;
+    border-radius: 8px;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.auth-page-input:focus {
+    border-color: #0c0cf7;
+    outline: none;
+}
+
+.auth-page-button {
+    background-color: #606675;
+    color: #020202;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.auth-page-button:hover {
+    background-color: #0b5ed1; 
+}
+
+.auth-page-create-button {
+    background-color: #606675; 
+}
+
+.auth-page-create-button:hover {
+    background-color: #0a67e9; 
+}
+
+.auth-page-error {
+    color: #0c0cf7;
+    font-weight: 600;
+    text-align: center;
+    margin-top: -10px;
+    font-size: 14px;
+}
+
+
+@media (min-width: 481px) and (max-width: 767px) {
+    .auth-page-form {
+        padding: 30px 20px;
+        max-width: 350px;
+    }
+
+    .auth-page-input {
+        font-size: 15px;
+        padding: 10px;
+    }
+
+    .auth-page-button, 
+    .auth-page-create-button {
+        font-size: 15px;
+        padding: 12px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .auth-page-form {
+        padding: 40px 30px;
+        max-width: 450px;
+    }
+
+    .auth-page-input {
+        font-size: 16px;
+        padding: 14px;
+    }
+
+    .auth-page-button, 
+    .auth-page-create-button {
+        font-size: 16px;
+        padding: 14px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .auth-page-form {
+        padding: 50px 40px;
+        max-width: 500px;
+    }
+
+    .auth-page-input {
+        font-size: 18px;
+        padding: 16px;
+    }
+
+    .auth-page-button, 
+    .auth-page-create-button {
+        font-size: 18px;
+        padding: 16px;
+    }
+}

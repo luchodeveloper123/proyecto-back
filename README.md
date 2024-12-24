@@ -1,0 +1,1 @@
+bueno, en este proyecto basicamente aprendi todo lo que se hasta ahora de programacion, es mi primera vez tocando codigo ya que estoy arrancando en todo esto de programacion. Me gustaria aprender muchas cosas mas que mas adelante voy a ir puliendo, fue un desafio para mi que fue bastante divertido
