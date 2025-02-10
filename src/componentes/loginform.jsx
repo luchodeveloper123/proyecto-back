@@ -4,7 +4,7 @@ function LoginForm({ onLogin }) {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
     const [error, setError] = useState('');
-
+console.log(username, password)
     const handleSubmit = async (e) => {
         e.preventDefault();
 
@@ -14,7 +14,7 @@ function LoginForm({ onLogin }) {
         }
 
         try {
-            const response = await fetch('http://localhost:5000/login', {
+            const response = await fetch('https://backend-beryl-sigma.vercel.app/login', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ usuario: username, contrasena: password }),
